@@ -89,6 +89,6 @@ class DatabaseSessionHandler implements SessionHandlerInterface{
 
 }
 
-session_set_save_handler(new DatabaseSessionHandler($db), false);
+session_set_save_handler(new DatabaseSessionHandler($db));
 
 session_start();
